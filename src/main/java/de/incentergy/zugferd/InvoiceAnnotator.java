@@ -3,6 +3,7 @@
  */
 package de.incentergy.zugferd;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -20,6 +21,7 @@ public interface InvoiceAnnotator {
 	 * 
 	 * @param pdfIn the input document
 	 * @param pdfOut the output document
+	 * @throws IOException 
 	 */
-	public void annotateInvoice(InputStream pdfIn, OutputStream pdfOut);
+	public void annotateInvoice(InputStream pdfIn, OutputStream pdfOut) throws IOException;
 }
